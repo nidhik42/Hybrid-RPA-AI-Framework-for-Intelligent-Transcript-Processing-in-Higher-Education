@@ -1,33 +1,20 @@
-# 🌐 Nidhi Krishna Murty — Professional Portfolio
+# 🌐 Nidhi Krishna Murty — Portfolio (GitHub Pages)
 
-[![pages-build-deployment](https://github.com/nidhik42/Hybrid-RPA-AI-Framework-for-Intelligent-Transcript-Processing-in-Higher-Education/actions/workflows/pages/pages-build-deployment/badge.svg)](https://nidhik42.github.io/Hybrid-RPA-AI-Framework-for-Intelligent-Transcript-Processing-in-Higher-Education/)
+**Live:** https://nidhik42.github.io/Hybrid-RPA-AI-Framework-for-Intelligent-Transcript-Processing-in-Higher-Education/
 
-🔗 **Live Site:** [View Portfolio](https://nidhik42.github.io/Hybrid-RPA-AI-Framework-for-Intelligent-Transcript-Processing-in-Higher-Education/)
+## Structure
+- `index.html` – Home / highlights / CV link
+- `projects.html` – Featured projects
+- `projects-specification.html` – **All detailed projects (one per card)**
+- `research.html` – Publications & case studies
+- `experience.html` – Professional timeline
+- `certifications.html` – CISA, PMP, CISM, CySA+, Pursuing CISSP
+- `contact.html` – Contact form (Formspree)
+- `style.css` – Site theme & timeline styles
+- `assets/` – All images + `Nidhi_Krishna_Murty_CV.pdf`
 
----
-
-## 📁 Structure
-- `index.html` → Home (highlights, CV)
-- `projects.html` → Projects (RPA-AI, ISO, Cloud GRC)
-- `research.html` → Research (publications & case studies)
-- `experience.html` → Full career timeline
-- `contact.html` → Contact form + links
-- `style.css` → Theme & timeline
-- `assets/Nidhi_Krishna_Murty_CV.pdf` → CV
-
----
-
-## 🚀 Highlights
-- **95% compliance uplift** via ISO 27002 programs  
-- **ISO 27001 Certification** leadership  
-- **Cloud GRC** across Azure, AWS, GCP  
-- **Hybrid RPA-AI automation** (Scopus Q3 publication)  
-- **Vendor Risk Framework** aligned with NIST/PCI DSS  
-- Tools: GRC Archer, Jira, SQL, SAS, Wireshark, NMAP  
-
----
-
-## 🛠 Deployment
-Upload all files to your GitHub repo root.  
-Enable **GitHub Pages** → Branch `main` → Folder `/root`.  
-Site will publish in ~2 minutes.
+## Setup
+1. Create an `assets/` folder and add:
+   `logo.png, hero.jpg, compliance.png, iso.png, ad_sql.png, rbac.png, training.png, db_encrypt.png, cloud_policy.png, cloud_grc.png, vendor_risk.png, tools.png, iam_migration.png, cloud.png, ai.png, cisa.png, pmp.png, cism.png, cysa.png, cisSP.png, Nidhi_Krishna_Murty_CV.pdf`.
+2. Replace `your-form-id` in `contact.html` with your Formspree form ID.
+3. Commit → GitHub Pages builds automatically.

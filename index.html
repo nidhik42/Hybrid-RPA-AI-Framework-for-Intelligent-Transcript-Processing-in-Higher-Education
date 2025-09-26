@@ -10,37 +10,41 @@
 <header>
   <div class="nav">
     <div class="brand">
-      <img src="assets/logo.png" alt="logo" style="height:40px">
+      <img src="assets/logo.png" alt="logo">
       <div class="title">Nidhi Krishna Murty</div>
     </div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects-specification.html">Projects Specification</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="experience.html">Experience</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
+
   <div class="hero">
     <div>
       <h1>Information Security & <span style="color:var(--accent)">AI Researcher</span></h1>
-      <p class="muted">Specialist in GRC, ISO 27001, RPA-AI automation, and cloud security with 15+ years of global experience.</p>
+      <p class="muted">GRC, ISO 27001, Cloud Security, and Hybrid RPA-AI systems for secure, efficient enterprise automation.</p>
       <div class="kpis">
         <div class="kpi">✅ 95% Compliance Uplift</div>
         <div class="kpi">⚡ 70% Faster Processes</div>
         <div class="kpi">🔒 ISO 27001 Certified</div>
       </div>
       <div class="badges">
-        <span class="tag">GRC</span><span class="tag">RPA-AI</span><span class="tag">Cloud Security</span><span class="tag">NLP/OCR</span>
+        <span class="tag">GRC</span><span class="tag">Cloud (Azure/AWS/GCP)</span><span class="tag">RPA-AI</span><span class="tag">NLP/OCR</span>
       </div>
       <div style="margin-top:12px;display:flex;gap:10px">
         <a href="projects.html"><button class="cta">View Projects</button></a>
         <a class="tag" href="assets/Nidhi_Krishna_Murty_CV.pdf">Download CV (PDF)</a>
       </div>
     </div>
-    <img src="assets/hero-cybersecurity.jpg" alt="cybersecurity" class="hero-img">
+    <img src="assets/hero.jpg" alt="Cybersecurity hero" class="hero-img"
+         onerror="this.style.display='none'">
   </div>
 </header>
 
@@ -49,30 +53,39 @@
     <h2>Highlights</h2>
     <div class="content cards">
 
-      <!-- Card 1: ISO Compliance -->
       <div class="card">
-        <img src="assets/compliance.png" alt="ISO Compliance">
+        <div class="thumb">
+          <img src="assets/compliance.png" alt="Compliance badge"
+               onerror="this.style.display='none'; this.parentElement.nextElementSibling.querySelector('.icon-fallback').style.display='flex'">
+        </div>
         <div class="body">
+          <div class="icon-fallback">🛡️</div>
           <h3>ISO 27001 Certification</h3>
-          <p>Spearheaded ISO 27002 control implementation, securing ISO 27001 certification and achieving 95% compliance.</p>
+          <p>Spearheaded ISO 27002 controls to achieve ISO 27001 certification; 95% compliance uplift.</p>
         </div>
       </div>
 
-      <!-- Card 2: Cloud Security -->
       <div class="card">
-        <img src="assets/cloud.png" alt="Cloud Security">
+        <div class="thumb">
+          <img src="assets/cloud.png" alt="Cloud security"
+               onerror="this.style.display='none'; this.parentElement.nextElementSibling.querySelector('.icon-fallback').style.display='flex'">
+        </div>
         <div class="body">
+          <div class="icon-fallback">☁️</div>
           <h3>Cloud Security Leadership</h3>
-          <p>Led GRC control design and testing across Azure, AWS, and GCP environments for enterprise resilience.</p>
+          <p>GRC control design & testing across Azure, AWS, and GCP for resilient, compliant platforms.</p>
         </div>
       </div>
 
-      <!-- Card 3: AI -->
       <div class="card">
-        <img src="assets/ai.png" alt="AI Automation">
+        <div class="thumb">
+          <img src="assets/ai.png" alt="AI automation"
+               onerror="this.style.display='none'; this.parentElement.nextElementSibling.querySelector('.icon-fallback').style.display='flex'">
+        </div>
         <div class="body">
+          <div class="icon-fallback">🤖</div>
           <h3>Hybrid RPA-AI Framework</h3>
-          <p>Designed UiPath + AI system for transcript automation, reducing processing errors by 85%.</p>
+          <p>UiPath + OCR/NLP for transcript automation; 85% error reduction, 3× throughput.</p>
         </div>
       </div>
 

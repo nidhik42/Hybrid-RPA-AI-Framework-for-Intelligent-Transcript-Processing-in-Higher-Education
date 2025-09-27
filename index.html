@@ -5,13 +5,23 @@
   <title>Nidhi Krishna Murty • Portfolio</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <script>
+    // simple lightbox
+    document.addEventListener('DOMContentLoaded', () => {
+      const lb = document.getElementById('lb'); const lbImg = document.getElementById('lb-img'); const close = document.getElementById('lb-close');
+      document.querySelectorAll('[data-lightbox]').forEach(a=>{
+        a.addEventListener('click', e => { e.preventDefault(); lbImg.src = a.href; lb.setAttribute('aria-hidden','false'); });
+      });
+      close.addEventListener('click', ()=> lb.setAttribute('aria-hidden','true'));
+      lb.addEventListener('click', e => { if(e.target===lb) lb.setAttribute('aria-hidden','true');});
+    });
+    function imgFallback(img){ img.style.display='none'; const b=img.closest('.card,.thumb,.gallery a').nextElementSibling; const f=img.parentElement.querySelector('.icon-fallback'); if(f) f.style.display='flex';}
+  </script>
 </head>
 <body>
 <header>
   <div class="nav">
-    <div class="brand">
-      <div class="title">Nidhi Krishna Murty</div>
-    </div>
+    <div class="brand"><div class="title">Nidhi Krishna Murty</div></div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -28,70 +38,83 @@
   <div class="hero">
     <div>
       <h1>Information Security & <span style="color:var(--accent)">AI Researcher</span></h1>
-      <p class="muted">GRC, ISO 27001, Cloud Security, and Hybrid RPA-AI systems for secure, efficient enterprise automation.</p>
+      <p class="muted">Award-winning cybersecurity leader (Global Leader Award) with 15+ years in IT governance, risk, compliance, cloud security, and intelligent automation.</p>
       <div class="kpis">
-        <div class="kpi">✅ 95% Compliance Uplift</div>
-        <div class="kpi">⚡ 70% Faster Processes</div>
-        <div class="kpi">🔒 ISO 27001 Certified</div>
+        <div class="kpi">🔒 ISO 27001 Certification Program</div>
+        <div class="kpi">⚡ 95% Compliance Uplift</div>
+        <div class="kpi">🥇 Team Lead Award • Tech Mahindra</div>
       </div>
-      <div class="badges">
-        <span class="tag">GRC</span><span class="tag">Cloud (Azure/AWS/GCP)</span><span class="tag">RPA-AI</span><span class="tag">NLP/OCR</span>
-      </div>
-      <div style="margin-top:12px;display:flex;gap:10px">
+      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
         <a href="projects.html"><button class="cta">View Projects</button></a>
         <a class="tag" href="assets/Nidhi_Krishna_Murty_CV.pdf">Download CV (PDF)</a>
       </div>
     </div>
-    <img src="assets/hero.jpg" alt="Cybersecurity hero" class="hero-img"
-         onerror="this.style.display='none'">
+    <img src="assets/hero.jpg" alt="Cybersecurity" class="hero-img" onerror="this.style.display='none'">
   </div>
 </header>
 
 <main>
   <section class="section">
-    <h2>Highlights</h2>
+    <h2>Interactive Gallery</h2>
+    <div class="content">
+      <div class="gallery">
+        <a href="assets/gallery-1.jpg" data-lightbox><img src="assets/gallery-1.jpg" alt="GRC dashboard" loading="lazy"></a>
+        <a href="assets/gallery-2.jpg" data-lightbox><img src="assets/gallery-2.jpg" alt="ISO audit" loading="lazy"></a>
+        <a href="assets/gallery-3.jpg" data-lightbox><img src="assets/gallery-3.jpg" alt="Cloud security" loading="lazy"></a>
+        <a href="assets/gallery-4.jpg" data-lightbox><img src="assets/gallery-4.jpg" alt="RBAC model" loading="lazy"></a>
+        <a href="assets/gallery-5.jpg" data-lightbox><img src="assets/gallery-5.jpg" alt="Vendor risk" loading="lazy"></a>
+        <a href="assets/gallery-6.jpg" data-lightbox><img src="assets/gallery-6.jpg" alt="RPA-AI pipeline" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Career Highlights</h2>
     <div class="content cards">
-
       <div class="card">
         <div class="thumb">
-          <img src="assets/compliance.png" alt="Compliance badge"
-               onerror="this.style.display='none'; this.parentElement.nextElementSibling.querySelector('.icon-fallback').style.display='flex'">
-        </div>
-        <div class="body">
+          <img src="assets/compliance.png" alt="Compliance" onerror="imgFallback(this)">
           <div class="icon-fallback">🛡️</div>
-          <h3>ISO 27001 Certification</h3>
-          <p>Spearheaded ISO 27002 controls to achieve ISO 27001 certification; 95% compliance uplift.</p>
+        </div>
+        <div class="body">
+          <h3>Compliance Uplift (+95%)</h3>
+          <p>Encryption & private access uplift programs; achieved 90% in critical domains.</p>
         </div>
       </div>
 
       <div class="card">
-        <div class="thumb">
-          <img src="assets/cloud.png" alt="Cloud security"
-               onerror="this.style.display='none'; this.parentElement.nextElementSibling.querySelector('.icon-fallback').style.display='flex'">
-        </div>
-        <div class="body">
-          <div class="icon-fallback">☁️</div>
-          <h3>Cloud Security Leadership</h3>
-          <p>GRC control design & testing across Azure, AWS, and GCP for resilient, compliant platforms.</p>
-        </div>
+        <div class="thumb"><img src="assets/iso.png" alt="ISO" onerror="imgFallback(this)"><div class="icon-fallback">📜</div></div>
+        <div class="body"><h3>ISO 27001 Certification</h3><p>Spearheaded ISO 27002 controls and drove successful certification.</p></div>
       </div>
 
       <div class="card">
-        <div class="thumb">
-          <img src="assets/ai.png" alt="AI automation"
-               onerror="this.style.display='none'; this.parentElement.nextElementSibling.querySelector('.icon-fallback').style.display='flex'">
-        </div>
-        <div class="body">
-          <div class="icon-fallback">🤖</div>
-          <h3>Hybrid RPA-AI Framework</h3>
-          <p>UiPath + OCR/NLP for transcript automation; 85% error reduction, 3× throughput.</p>
-        </div>
+        <div class="thumb"><img src="assets/sql.png" alt="SQL" onerror="imgFallback(this)"><div class="icon-fallback">🗄️</div></div>
+        <div class="body"><h3>AD & SQL Engineering</h3><p>Migration support, issue resolution, and automated reporting.</p></div>
       </div>
 
+      <div class="card">
+        <div class="thumb"><img src="assets/rbac.png" alt="RBAC" onerror="imgFallback(this)"><div class="icon-fallback">🔐</div></div>
+        <div class="body"><h3>Role-Based Access</h3><p>Segregation of duties; 70% reduction in escalation risk.</p></div>
+      </div>
+
+      <div class="card">
+        <div class="thumb"><img src="assets/training.png" alt="Training" onerror="imgFallback(this)"><div class="icon-fallback">🎓</div></div>
+        <div class="body"><h3>Security Training (100% ISO)</h3><p>Built and delivered encryption/testing training with CISO team.</p></div>
+      </div>
+
+      <div class="card">
+        <div class="thumb"><img src="assets/db_encrypt.png" alt="DB Encryption" onerror="imgFallback(this)"><div class="icon-fallback">🔑</div></div>
+        <div class="body"><h3>DB Password Encryption</h3><p>Two-year reduction in findings; ~90% posture improvement.</p></div>
+      </div>
     </div>
   </section>
 </main>
 
-<footer>© 2025 Nidhi Krishna Murty • <a href="mailto:Nidhikrishnamurty@gmail.com">Nidhikrishnamurty@gmail.com</a></footer>
+<div class="lightbox" id="lb" aria-hidden="true">
+  <button class="close" id="lb-close">Close ✕</button>
+  <img id="lb-img" alt="">
+</div>
+
+<footer>© 2025 Nidhi Krishna Murty • <a href="mailto:nidhiaransh@gmail.com">nidhiaransh@gmail.com</a></footer>
 </body>
 </html>

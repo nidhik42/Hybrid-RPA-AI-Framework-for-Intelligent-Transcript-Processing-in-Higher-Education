@@ -5,7 +5,9 @@
   <title>Projects • Nidhi Krishna Murty</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <script>function imgFallback(i){i.style.display='none';i.parentElement.querySelector('.icon-fallback').style.display='flex'}</script>
+  <style>
+    .icon { font-size: 48px; display: block; text-align: center; margin-bottom: 12px; }
+  </style>
 </head>
 <body>
 <header>
@@ -31,29 +33,38 @@
     <div class="content cards">
 
       <div class="card">
-        <div class="thumb"><img src="assets/ai.png" alt="RPA-AI" onerror="imgFallback(this)"><div class="icon-fallback">🤖</div></div>
-        <div class="body"><h3>Hybrid RPA-AI Transcript Processing</h3><p>UiPath + OCR/NLP validation; 70% faster processing and 85% error reduction.</p></div>
+        <span class="icon">🤖</span>
+        <h3>Hybrid RPA-AI Transcript Processing</h3>
+        <p>UiPath + OCR/NLP validation; 70% faster processing and 85% error reduction.</p>
       </div>
 
       <div class="card">
-        <div class="thumb"><img src="assets/cloud_grc.png" alt="Cloud GRC" onerror="imgFallback(this)"><div class="icon-fallback">☁️</div></div>
-        <div class="body"><h3>Cloud Security GRC</h3><p>Control design/testing across Azure, AWS, GCP; standard governance and uplift to 90% compliance across 15 BUs.</p></div>
+        <span class="icon">☁️</span>
+        <h3>Cloud Security GRC</h3>
+        <p>Control design/testing across Azure, AWS, GCP; achieved 90% compliance uplift across 15 business units.</p>
       </div>
 
       <div class="card">
-        <div class="thumb"><img src="assets/vendor_risk.png" alt="Vendor Risk" onerror="imgFallback(this)"><div class="icon-fallback">📋</div></div>
-        <div class="body"><h3>Vendor Risk Survey (NIST/PCI DSS)</h3><p>Standardized survey & scoring; achieved 100% vendor control compliance.</p></div>
+        <span class="icon">📋</span>
+        <h3>Vendor Risk Survey (NIST/PCI DSS)</h3>
+        <p>Developed vendor survey & scoring; ensured 100% compliance with vendor controls.</p>
       </div>
 
       <div class="card">
-        <div class="thumb"><img src="assets/rbac.png" alt="RBAC" onerror="imgFallback(this)"><div class="icon-fallback">🔐</div></div>
-        <div class="body"><h3>RBAC Program</h3><p>Role segregation clarified; 70% reduction in escalation risks.</p></div>
+        <span class="icon">🔐</span>
+        <h3>RBAC Program</h3>
+        <p>Designed role-based access; clarified role segregation and reduced escalation risks by 70%.</p>
+      </div>
+
+      <div class="card">
+        <span class="icon">🧠</span>
+        <h3>AI in Network Security</h3>
+        <p>Enhanced DDoS attack detection and mitigation using ML/DL models; improved accuracy & response.</p>
       </div>
 
     </div>
-
-    <div class="content" style="margin-top:10px">
-      <a class="tag" href="projects-specification.html">See the full Projects Specification →</a>
+    <div style="margin-top:20px">
+      <a href="projects-specification.html"><button class="cta">See the full Projects Specification</button></a>
     </div>
   </section>
 </main>

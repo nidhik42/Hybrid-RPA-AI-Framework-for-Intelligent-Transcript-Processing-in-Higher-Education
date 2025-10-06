@@ -1,4 +1,4 @@
-# 🌐 Nidhi Krishna Murty — Portfolio (GitHub Pages)
+# 🌐 Nidhi Srivastava — Portfolio (GitHub Pages)
 
 **Live:** https://nidhik42.github.io/Hybrid-RPA-AI-Framework-for-Intelligent-Transcript-Processing-in-Higher-Education/
 

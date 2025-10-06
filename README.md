@@ -1,6 +1,6 @@
 # 🌐 Nidhi Srivastava — Portfolio (GitHub Pages)
 
-**Live:** https://nidhik42.github.io/Hybrid-RPA-AI-Framework-for-Intelligent-Transcript-Processing-in-Higher-Education/
+**Live:** https://nidhik42.github.io/
 
 ## Structure
 - `index.html` – Home / highlights / CV link
